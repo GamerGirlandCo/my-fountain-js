@@ -1,4 +1,4 @@
-import { regex } from './regex';
+import { regex } from './regexes';
 import { Token } from './token';
 
 import { Lexer } from './lexer';

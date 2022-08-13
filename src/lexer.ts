@@ -1,4 +1,4 @@
-import { regex } from './regex';
+import { regex } from './regexes';
 
 export class Lexer {
     reconstruct(script: string) {
@@ -15,13 +15,13 @@ export class InlineLexer extends Lexer {
 
         line_break: '<br />',
 
-        bold_italic_underline: '<span class="bold italic underline">$2</span>',
-        bold_underline: '<span class="bold underline">$2</span>',
-        italic_underline: '<span class="italic underline">$2</span>',
-        bold_italic: '<span class="bold italic">$2</span>',
-        bold: '<span class="bold">$2</span>',
-        italic: '<span class="italic">$2</span>',
-        underline: '<span class="underline">$2</span>'
+        bold_italic_underline: '<span class="fountain-marker bold italic underline">$2</span>',
+        bold_underline: '<span class="fountain-marker bold underline">$2</span>',
+        italic_underline: '<span class="fountain-marker italic underline">$2</span>',
+        bold_italic: '<span class="fountain-marker bold italic">$2</span>',
+        bold: '<span class="fountain-marker bold">$2</span>',
+        italic: '<span class="fountain-marker italic">$2</span>',
+        underline: '<span class="fountain-marker underline">$2</span>'
     };
 
     reconstruct(line: string) {
